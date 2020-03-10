@@ -1,0 +1,96 @@
+EXERCICIO1
+public class quadrado1 {
+ double base;
+ double altura;
+ double area;
+double calculararea(){
+    area = base*altura;
+    return area;
+}
+
+}
+public class quadrado2
+	
+		 double base;
+		 double altura;
+		 double area;
+		double calculararea(){
+		    area = base*altura;
+		    return area;
+		}
+
+	
+}public class principal {
+	public static void main (String args[]){
+	 
+		quadrado1 primeiroquadrado = new quadrado1();
+		primeiroquadrado.base=20.5;
+		primeiroquadrado.altura=20.1;
+		System.out.println("base do quadrado"+primeiroquadrado.base);
+		System.out.println("altura do quadrado"+primeiroquadrado.altura);
+		System.out.println(primeiroquadrado.calculararea());
+		
+		quadrado2 segundoquadrado = new quadrado2();
+		segundoquadrado.base=12.3;
+		segundoquadrado.altura=20.1;
+		System.out.println("base do quadrado"+segundoquadrado.base);
+		System.out.println("altura do quadrado"+segundoquadrado.altura);
+		System.out.println(segundoquadrado.calculararea());
+	}
+
+}
+
+
+
+EXERCICIO2
+public class principal {
+ public static void main(String args[]){
+	 
+	 Pedro funcionarioPedro = new Pedro();
+	 funcionarioPedro.nome = "Pedro";
+	 funcionarioPedro.salariobruto = 1040;
+	 funcionarioPedro.imposto = 100;
+	 System.out.println("funcionario Pedro");
+	 System.out.println("salario liquido "+funcionarioPedro.salarioliquido());
+	 System.out.println("aumento de salario"+funcionarioPedro.aumentarsalario(500));
+	 
+	 Vagner funcionarioVagner = new Vagner();
+	 funcionarioVagner.nome = "Vagner";
+	 funcionarioVagner.salariobruto = 1250;
+	 funcionarioVagner.imposto = 125;
+	 System.out.println("funcionario Vagner");
+	 System.out.println("salario liquido "+funcionarioVagner.salarioliquido());
+	 System.out.println("aumento de salario"+funcionarioVagner.aumentarsalario(500));
+ }
+public class Pedro {
+String nome;
+double salariobruto;
+double imposto;
+double salarioliquido;
+
+double salarioliquido(){
+	salarioliquido=salariobruto-imposto; 
+	return salarioliquido;
+}
+double aumentarsalario(double valor){
+	salariobruto=salariobruto+valor;
+	return salariobruto;
+}
+
+public class Vagner {
+	String nome;
+	double salariobruto;
+	double imposto;
+	double salarioliquido;
+	double salarioliquido(){
+		salarioliquido=salariobruto-imposto; 
+		return salarioliquido;
+	}
+	double aumentarsalario(double valor){
+		salariobruto=salariobruto+valor;
+		return salariobruto;
+	}
+
+}
+
+}
